@@ -1,0 +1,9 @@
+{
+  "name": "aios-factory",
+  "version": "1.0.0",
+  "description": "Generate complete AI Operating System workspaces for any business vertical. Built on the Five Elements architecture from the AAA Accelerator AIOS methodology.",
+  "author": {
+    "name": "AfrexAI",
+    "url": "https://afrexai.com"
+  }
+}

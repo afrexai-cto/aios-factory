@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}",
+        "SLACK_TEAM_ID": "${SLACK_TEAM_ID}"
+      },
+      "_comment": "Team communication — send messages, read channels, manage threads"
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-notion"],
+      "env": {
+        "NOTION_TOKEN": "${NOTION_TOKEN}"
+      },
+      "_comment": "Project management — read and update Notion databases and pages"
+    },
+    "google-calendar": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-google-calendar"],
+      "env": {
+        "GOOGLE_CREDENTIALS": "${GOOGLE_CREDENTIALS}"
+      },
+      "_comment": "Scheduling — read and create calendar events"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-filesystem", "${WORKSPACE_ROOT}"],
+      "_comment": "Local file access — read and write workspace files"
+    }
+  }
+}

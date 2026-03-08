@@ -1,0 +1,127 @@
+# Niche Configuration — AI Automation Agency
+# This file defines the vertical-specific settings for this AIOS workspace.
+
+niche:
+  name: "AI Automation Agency"
+  slug: "ai-agency"
+  description: "An agency that builds AI Operating System workspaces for business clients"
+  geography: "Global"
+  business_size: "1-10 staff"
+
+# Terminology Mapping
+terminology:
+  case: "Project"
+  client: "Client"
+  document: "Deliverable"
+  workflow: "Engagement"
+  intake: "Discovery Call"
+  outcome: "Deliverable"
+  provider: "Consultant"
+  status: "Project Status"
+  report: "Proposal"
+  invoice: "Invoice"
+
+# Core Workflows
+workflows:
+  - name: "Client Onboarding"
+    trigger: "New inquiry from a potential client"
+    steps:
+      - "Capture inquiry details (name, business, source, initial request)"
+      - "Qualify the lead against fit criteria (business type, size, pain, budget, decision maker)"
+      - "Research the prospect's business (website, LinkedIn, reviews)"
+      - "Conduct 45-60 minute discovery call (current state, pain points, vision)"
+      - "Write discovery debrief (pain points, Five Elements mapping, fit assessment)"
+      - "Decide: proceed to scoping, decline, or follow up later"
+    output: "Discovery call debrief with pain points and fit assessment"
+    ai_opportunity: "AI can automate pre-call research, generate industry-specific questions, and structure the debrief from call notes"
+
+  - name: "Project Scoping"
+    trigger: "Qualified lead after successful discovery call"
+    steps:
+      - "Review discovery debrief"
+      - "Map client needs to Five Elements (intake, processing, output, tracking, deployment)"
+      - "Identify required skills with complexity ratings"
+      - "Audit integration needs and MCP availability"
+      - "Calculate effort estimate (hours and timeline)"
+      - "Produce scope document"
+    output: "Project scope document with element mapping, skill inventory, and estimate"
+    ai_opportunity: "AI can auto-generate element mapping from discovery notes and calculate effort estimates from skill inventory"
+
+  - name: "Proposal Creation"
+    trigger: "Completed project scope"
+    steps:
+      - "Draft executive summary focused on client's problem"
+      - "Document proposed solution organized by Five Elements"
+      - "List deliverables and timeline"
+      - "Prepare pricing options (2-3 tiers)"
+      - "Add agency credentials and next steps"
+      - "Review and send to client"
+    output: "Professional client proposal with pricing"
+    ai_opportunity: "AI can generate the full proposal draft from scope document, requiring only review and pricing approval"
+
+  - name: "Project Delivery"
+    trigger: "Signed engagement agreement"
+    steps:
+      - "Kickoff call with client (confirm scope, set expectations, get access)"
+      - "Build workspace (foundation, skills, commands, integrations)"
+      - "Internal review (validate all elements work end-to-end)"
+      - "Client testing (structured scenarios, feedback collection)"
+      - "Refinement (address feedback, manage scope)"
+      - "Launch (transfer workspace, training call, go-live)"
+      - "Support (weekly check-ins for 30 days)"
+    output: "Working AIOS workspace delivered and launched for the client"
+    ai_opportunity: "AI assists with build (generating skills and commands), testing (running validation), and support (tracking client usage)"
+
+# Pain Points
+pain_points:
+  - name: "Discovery Call Prep Takes Too Long"
+    description: "Researching a prospect's business, industry, and potential pain points before a discovery call takes 1-2 hours of manual research per client."
+    frequency: "per-client"
+    current_solution: "Manual Google searches, reading website, checking LinkedIn"
+    ai_solution: "AI aggregates business info, industry trends, and generates targeted discovery questions in minutes"
+
+  - name: "Proposal Writing Is Repetitive But Time-Consuming"
+    description: "Each proposal follows the same structure but requires customization for the specific client. Writing takes 3-4 hours per proposal."
+    frequency: "per-project"
+    current_solution: "Copy-paste from previous proposals, manual editing"
+    ai_solution: "AI generates a complete first draft from the scope document, requiring only review and pricing decisions"
+
+  - name: "Project Status Tracking Falls Behind"
+    description: "With multiple active projects, keeping status updated and communicating progress to clients becomes a full-time job."
+    frequency: "daily"
+    current_solution: "Spreadsheets and memory, occasional missed updates"
+    ai_solution: "AI maintains project status from context files and generates client update emails automatically"
+
+# Five Elements Mapping
+five_elements:
+  intake: "New client inquiries arrive via website, referrals, LinkedIn, and community connections. Discovery calls are the primary intake method."
+  processing: "Agency consultants analyze client needs using the Five Elements framework, map workflows, and design AIOS workspaces."
+  output: "Working AIOS workspaces delivered to clients, plus proposals, scope documents, and project updates."
+  tracking: "Project status tracked across phases (Kickoff through Support). Pipeline tracked from inquiry to close."
+  deployment: "Claude Code workspace on each consultant's machine. Client workspaces deployed as Git repos or shared directories."
+
+# Integrations
+integrations:
+  - name: "Slack"
+    purpose: "Team communication, client channels, project notifications"
+    mcp_available: true
+
+  - name: "Notion"
+    purpose: "Project tracking, client database, pipeline management"
+    mcp_available: true
+
+  - name: "Google Calendar"
+    purpose: "Discovery calls, project milestones, client meetings"
+    mcp_available: true
+
+  - name: "Email (SMTP)"
+    purpose: "Sending proposals, client updates, and invoices"
+    mcp_available: false
+
+# Compliance
+compliance:
+  primary_regulator: "None (general business)"
+  key_obligations:
+    - "Client data confidentiality (standard NDA)"
+    - "GDPR compliance if handling EU client data"
+  data_sensitivity: "medium"
