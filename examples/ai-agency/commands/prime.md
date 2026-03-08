@@ -1,3 +1,8 @@
+---
+description: Initialize session by loading agency context and workspace state
+argument-hint: ""
+---
+
 # Prime
 
 > Read the context files and summarize your understanding of this agency workspace.

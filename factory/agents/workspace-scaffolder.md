@@ -69,6 +69,8 @@ Replace all template placeholders:
 - `{{TERMINOLOGY_TABLE}}` with the complete term mapping
 - `{{COMMANDS_TABLE}}` with available commands
 - `{{SKILLS_LIST}}` with skill descriptions
+- `{{SKILLS_DIRECTORY_TREE}}` with the actual skill directory lines (e.g., `│   ├── client-onboarding/SKILL.md`)
+- `{{COMMANDS_DIRECTORY_TREE}}` with the actual command file lines (e.g., `│   ├── prime.md`)
 
 ### Phase 3: Generate Skills
 

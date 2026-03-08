@@ -33,9 +33,15 @@ Always start sessions with `/prime`. Claude reads the context files and confirms
 │   ├── team.md              # Team members and roles
 │   └── task-audit.md        # Tasks and automation tracking
 ├── skills/
-{{SKILLS_DIRECTORY_TREE}}
+│   ├── <skill-1>/SKILL.md       # [Skill description]
+│   ├── <skill-2>/SKILL.md       # [Skill description]
+│   ├── <skill-3>/SKILL.md       # [Skill description]
+│   └── <skill-4>/SKILL.md       # [Skill description]
 ├── commands/
-{{COMMANDS_DIRECTORY_TREE}}
+│   ├── prime.md                 # /prime — initialize session
+│   ├── intake.md                # /intake — process new work
+│   ├── status.md                # /status — check current status
+│   └── scope.md                 # /scope — scope new work
 └── niche-config.yaml        # Vertical configuration
 ```
 

@@ -70,13 +70,13 @@ my-vertical-workspace/
 │   ├── team.md                  # Team structure and roles
 │   └── task-audit.md            # Track what gets automated
 ├── skills/
-│   ├── client-workflow/
+│   ├── client-onboarding/
 │   │   └── SKILL.md             # Domain-specific client management
-│   ├── intake-process/
+│   ├── project-scoping/
 │   │   └── SKILL.md             # How new work enters the system
 │   ├── delivery-workflow/
 │   │   └── SKILL.md             # How work gets delivered
-│   └── reporting/
+│   └── proposal-generation/
 │       └── SKILL.md             # What the system produces
 ├── commands/
 │   ├── prime.md                 # /prime — start every session here

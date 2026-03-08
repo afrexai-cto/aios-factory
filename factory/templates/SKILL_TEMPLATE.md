@@ -8,6 +8,8 @@ triggers:
   - "{{TRIGGER_1}}"
   - "{{TRIGGER_2}}"
   - "{{TRIGGER_3}}"
+references:
+  - "{{REFERENCE_FILE_1}}"
 ---
 
 # {{SKILL_NAME}}
