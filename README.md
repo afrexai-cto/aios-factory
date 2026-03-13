@@ -21,7 +21,7 @@ The concept comes from the [AAA Accelerator](https://aaaaccelerator.com), the le
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/1kalin/aios-factory.git
+git clone https://github.com/afrexai-cto/aios-factory.git
 cd aios-factory
 ```
 

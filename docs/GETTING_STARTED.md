@@ -17,7 +17,7 @@ A step-by-step guide to installing AIOS Factory and generating your first worksp
 Clone the repository:
 
 ```bash
-git clone https://github.com/1kalin/aios-factory.git
+git clone https://github.com/afrexai-cto/aios-factory.git
 cd aios-factory
 ```
 

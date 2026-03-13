@@ -8,7 +8,7 @@ This file provides guidance to Claude Code when working within this workspace.
 
 This is an **AI Operating System workspace** for an AI automation agency. It gives Claude the context, skills, and commands needed to act as an intelligent assistant that understands how to run a successful agency — from finding clients to scoping projects to delivering AIOS builds.
 
-> Built with [AIOS Factory](https://github.com/1kalin/aios-factory) — from the AAA Accelerator AIOS methodology.
+> Built with [AIOS Factory](https://github.com/afrexai-cto/aios-factory) — from the AAA Accelerator AIOS methodology.
 
 ---
 
